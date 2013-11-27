@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<properties>
+		<title>Development</title>
+		<author>Steffen Pingel</author>
+	</properties>
+	<body>
+		<section name="Development">
+			<p>
+				JHylaFAX uses a couple of
+				<a href="http://jhylafax.sourceforge.net/dependencies.html">3rd
+					party libraries</a>
+				.
+			</p>
+			<!--
+				<p>The gnu.hylafax library was modified slightly to accomodate
+				JHylaFAX's requirements. A patch is available <a
+				href="patches/gnu-hylafax-0.0.9.2-1.diff">here</a> (see <a
+				href="patches/">patches directory</a> for older patches).</p>
+			-->
+			<subsection name="Building">
+				<p>
+					The easiest way to build JHylaFAX is using
+					<a href="http://maven.apache.org/" target="_blank">Apache
+						Maven 2.x
+					</a>
+					:
+				</p>
+				<p>Extract the JHylaFAX source archive and change to the
+					project directory (the top level directory that contains the
+					file
+					project.xml).</p>
+
+				<p>
+					<b>Build a Jar</b>
+				</p>
+				<p>
+					To build a jar that includes all dependencies, run:
+					<source>mvn assembly:assembly</source>
+				</p>
+
+				<p>
+					<b>Import as Eclipse Project</b>
+				</p>
+				<p>You can checkout the jhylafax directory from CVS using
+					Eclipse. The project contains metadata for the m2eclipse plug-in.
+				</p>
+			</subsection>
+		</section>
+	</body>
+</document>

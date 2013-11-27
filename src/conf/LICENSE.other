@@ -1,0 +1,17 @@
+JHylaFAX ships with 3rd party software:
+
+ * JGoodies Forms
+ 
+   Copyright (c) 2002-2004 JGoodies Karsten Lentzsch. All rights reserved.
+
+
+ * gnu.hylafax
+
+   GNU LIBRARY GENERAL PUBLIC LICENSE 
+   http://www.gnu.org/licenses/lgpl.txt
+
+
+ * Commons Logging
+
+   This product includes software developed by
+   The Apache Software Foundation (http://www.apache.org/).

@@ -1,0 +1,1361 @@
+# translation of de.po to
+# translation of de.po to German
+# translation of keys.po to
+# JHylaFax - A java client for HylaFAX.
+# Copyright (C) 2005 by Steffen Pingel <steffenp@gmx.de>
+# This file is distributed under the same license as JHylaFAX.
+#
+# Steffen Pingel <steffenp@gmx.de>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: de\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-04-18 16:15-0700\n"
+"PO-Revision-Date: 2007-02-15 15:41+0000\n"
+"Last-Translator: fberger <bflat1@gmx.net>\n"
+"Language-Team: German <xnap-commons-devel@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2009-04-18 22:32+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:97
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:258
+msgid "Permissions"
+msgstr "Berechtigungen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:98
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:105
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:175
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:256
+msgid "Owner"
+msgstr "Besitzer"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:99
+msgid "Created"
+msgstr "Erstellt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:100
+msgid "Modified"
+msgstr "Geändert"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:101
+msgid "Accessed"
+msgstr "Zugegriffen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:102
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:471
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:270
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:118
+msgid "Name"
+msgstr "Name"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DocumentQueuePanel.java:103
+msgid "Size"
+msgstr "Größe"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:101
+msgid "Normal"
+msgstr "Normal"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:102
+msgid "Fine"
+msgstr "Fein"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:103
+msgid "Superfine"
+msgstr "Sehr fein"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:127
+msgid "Errors only"
+msgstr "Nur Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:128
+msgid "After sending"
+msgstr "Nach dem Senden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:129
+msgid "After requeuing"
+msgstr "Nach einer Wiederholung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/Settings.java:130
+msgid "Always"
+msgstr "Immer"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:119
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:703
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:736
+msgid "Error creating temporary file"
+msgstr "Fehler beim Erzeugen einer temporären Datei"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:172
+msgid "Reset to Defaults"
+msgstr "Auf Standardwerte zurücksetzen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:199
+#, java-format
+msgid "Do you really want to delete the file {0}?"
+msgstr "Soll die Datei {0} wirklich gelöscht werden?"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:200
+msgid "Delete File"
+msgstr "Lösche Datei"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:208
+msgid "Delete"
+msgstr "Löschen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:247
+msgid "Save"
+msgstr "Speichern"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:276
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:490
+msgid "View"
+msgstr "Anzeigen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractQueuePanel.java:278
+msgid "The selected file is opened in an external viewer."
+msgstr "Die selektierte Datei wird mit einem externen Programm angezeigt."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:106
+msgid "No file selected"
+msgstr "Keine Datei ausgewählt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:106
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:121
+msgid "Import Error"
+msgstr "Import Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:121
+msgid "No valid separator specified"
+msgstr "Kein gültiges Trennzeichen angegeben"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:127
+#, java-format
+msgid "Imported {0} contacts"
+msgstr "{0} Kontakte importiert"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:128
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:454
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:794
+msgid "JHylaFAX Address Book"
+msgstr "JHylaFAX Adressbuch"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:133
+#, java-format
+msgid "Could not import from file \"{0}\""
+msgstr "Der Import von Datei \"{0}\" ist fehlgeschlagen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:134
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:780
+msgid "JHylaFAX Addressbook Error"
+msgstr "JHylaFAX Adressbuch Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:149
+msgid "JHylaFAX Address Book Import Wizard"
+msgstr "JHylaFAX Adressbuch Importassistent"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:166
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:784
+msgid "vCards (*.vcf)"
+msgstr "vCards (*.vcf)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:168
+msgid "CSV (*.csv)"
+msgstr "CSV (*.csv)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:170
+msgid "SuSEFax (.susephone)"
+msgstr "SuSEFax (.susephone)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:180
+msgid "Select file to import."
+msgstr "Datei für den Import auswählen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:192
+msgid "Import File"
+msgstr "Datei Importieren"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:199
+msgid "File:"
+msgstr "Datei:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:249
+msgid "Select import format."
+msgstr "Format für den Import auswählen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:273
+msgid "Import Format"
+msgstr "Importformat"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:283
+msgid "vCard"
+msgstr "vCard"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:284
+msgid "CSV"
+msgstr "CSV"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:285
+msgid "Separator:"
+msgstr "Trennzeichen:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:286
+msgid "Expected Format: First Name, Last Name, Fax, Company"
+msgstr "Erwartetes Format: Vorname, Nachname, Fax, Firma"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/ImportWizard.java:287
+msgid "SuSEFax"
+msgstr "SuSEFax"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/EditContactDialog.java:104
+msgid "Edit Contact"
+msgstr "Kontakt bearbeiten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/EditContactDialog.java:106
+msgid "First Name"
+msgstr "Vorname"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/EditContactDialog.java:107
+msgid "Last Name"
+msgstr "Nachname"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/EditContactDialog.java:108
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:472
+msgid "Company"
+msgstr "Firma"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/EditContactDialog.java:109
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:473
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:447
+msgid "Fax"
+msgstr "Fax"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:126
+msgid "Could not load address book"
+msgstr "Das Adressbuch konnte nicht geladen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:127
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:139
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:799
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:211
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:245
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:290
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:396
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:443
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/EditDialog.java:85
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAXHelper.java:52
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/PollDialog.java:93
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:173
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:345
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:359
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:704
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:737
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:953
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:962
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:967
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:134
+msgid "JHylaFAX Error"
+msgstr "JHylaFAX Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:138
+msgid "Could not store address book"
+msgstr "Das Adressbuch konnte nicht gespeichert werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:178
+msgid "Local Address Book"
+msgstr "Lokales Adressbuch"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:456
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:312
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:563
+msgid "Address Book"
+msgstr "Adressbuch"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:458
+msgid "New Contact..."
+msgstr "Neuer Kontakt..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:459
+msgid "Edit Contact..."
+msgstr "Kontakt Bearbeiten..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:460
+msgid "Delete Contact"
+msgstr "Kontakt Löschen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:462
+msgid "Import..."
+msgstr "Importieren..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:463
+msgid "Export..."
+msgstr "Exportieren..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:465
+msgid "Close"
+msgstr "Schliessen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:467
+msgid "Search for"
+msgstr "Suchen nach"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:468
+msgid "Go"
+msgstr "Los"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:739
+msgid "Do you really want to delete the selected contacts?"
+msgstr "Sollen die ausgewählten Kontakte wirklich gelöscht werden?"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:740
+msgid "Delete Contacts"
+msgstr "Kontake Löschen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:780
+msgid "No data to export"
+msgstr "Keine Daten zum Exportieren"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:793
+#, java-format
+msgid "Exported {0} contacts"
+msgstr "{0} Kontakte exportiert"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/addressbook/AddressBook.java:798
+#, java-format
+msgid "Could not export to file \"{0}\""
+msgstr "Der Export in Datei \"{0}\" ist fehlgeschlagen."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:210
+msgid "You must at least send a document or a cover"
+msgstr "Es muss entweder ein Dokument oder ein Deckblatt ausgewählt sein"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:234
+#, java-format
+msgid "Do you really want to send the non PostScript file \"{0}\"?"
+msgstr "Das Dokument \"{0}\" ist nicht im PostScript-Format. Wirklich senden?"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:235
+msgid "JHylaFAX - Send non PostScript file"
+msgstr "JHylaFAX - Nicht PostScript Datei senden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:244
+msgid "Could not check for PostScript"
+msgstr "Das PostScript-Format konnte nicht geprüft werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:289
+#, java-format
+msgid "Could not read cover file: {0}"
+msgstr "Die Deckblattdatei konnte nicht gelesen werden: {0}"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:321
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:413
+msgid "Generating cover"
+msgstr "Generiere Deckblatt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:346
+msgid "Uploading documents"
+msgstr "Lade Dokumente hoch"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:395
+msgid "Could not send fax"
+msgstr "Das Fax konnte nicht gesendet werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:421
+msgid "Saving cover"
+msgstr "Speichere Deckblatt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:442
+msgid "Could not preview cover"
+msgstr "Die Deckblattvorschau konnte nicht angezeigt werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:451
+msgid "Send Fax"
+msgstr "Fax Senden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:452
+msgid "Document"
+msgstr "Dokument"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:453
+msgid "Include Cover"
+msgstr "Deckblatt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:454
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:100
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:176
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:267
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:72
+msgid "Sender"
+msgstr "Absender"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:455
+msgid "Recepient"
+msgstr "Empfänger"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:456
+msgid "Subject"
+msgstr "Betreff"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:457
+msgid "Comment"
+msgstr "Kommentar"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:504
+msgid "Preview Cover"
+msgstr "Deckblattvorschau"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:505
+msgid "Opens an external programm to preview the cover page"
+msgstr "Öffnet ein externes Programm zur Anzeige des Deckblattes"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:521
+msgid "More"
+msgstr "Mehr"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SendDialog.java:522
+msgid "Displays an additional field to enter a document filename"
+msgstr "Zeigt ein weiteres Feld zur Eingabe von Dateinamen an"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/EditDialog.java:84
+msgid "Could not set job parameter"
+msgstr "Der Job Parameter konnte nicht gesetzt werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/EditDialog.java:95
+msgid "Edit Job"
+msgstr "Job Ändern"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAXHelper.java:51
+msgid "Could not execute viewer"
+msgstr "Das Anzeigeprogramm konnte nicht aufgerufen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAXHelper.java:68
+msgid ""
+"Could not open file: Please enter the path of an external viewer in the "
+"settings."
+msgstr ""
+"Die Datei konnte nicht geöffnet werder: Bitte den Pfad für das "
+"Anzeigeprogramm in den Einstellungen angeben"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ArgsHandler.java:65
+msgid "Invalid parameter. Use -h for help."
+msgstr "Ungültiger Parameter. -h für Hilfe"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ArgsHandler.java:110
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ArgsHandler.java:114
+#, java-format
+msgid "{0} parameter requires argument"
+msgstr "Parameter {0} erfordert einen Operanden."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueue.java:76
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:158
+msgid "HylaFAX Server"
+msgstr "HylaFAX Server"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/PollDialog.java:92
+msgid "Could not poll fax"
+msgstr "Das Fax konnte nicht abgerufen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/PollDialog.java:103
+msgid "Poll Fax"
+msgstr "Fax Abrufen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobDialog.java:42
+msgid "Job"
+msgstr "Job"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:101
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:181
+msgid "Pages"
+msgstr "Seiten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:102
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:180
+msgid "Time"
+msgstr "Zeit"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:103
+msgid "Filename"
+msgstr "Dateiname"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:104
+msgid "Filesize"
+msgstr "Dateigröße"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:106
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:178
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:122
+msgid "Resolution"
+msgstr "Auflösung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:107
+msgid "Signalling Rate"
+msgstr "Übertragungsrate"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:108
+msgid "Receiving"
+msgstr "Empfange"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/ReceiveQueuePanel.java:109
+msgid "Error"
+msgstr "Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/TransferMonitor.java:66
+msgid "Aborting transfer, please wait"
+msgstr "Breche Übertragung ab, bitte warten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:179
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:205
+msgid "Status Update"
+msgstr "Status Änderung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:236
+msgid "Appearance"
+msgstr "Aussehen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:257
+msgid "Behavior"
+msgstr "Verhalten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:273
+msgid "Confirmations"
+msgstr "Bestätigungen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:300
+msgid "Programs"
+msgstr "Programme"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:327
+msgid "Cover"
+msgstr "Deckblatt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:413
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:415
+msgid "Connection"
+msgstr "Verbindung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:416
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:229
+msgid "Host"
+msgstr "Adresse"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:417
+msgid "Passive Transfers (Select If Transfers Timeout)"
+msgstr "Passive Übertragung (bei Zeitüberschreitungen auswählen)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:418
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:230
+msgid "Port"
+msgstr "Port"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:419
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:233
+msgid "Username"
+msgstr "Benutzer"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:420
+msgid "The username that is sent to the server."
+msgstr "Benutzername, der zum Server übermittelt wird."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:421
+msgid "Password"
+msgstr "Passwort"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:423
+msgid "Admin Privileges"
+msgstr "Admin Privilegien"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:424
+msgid "Update Status on Startup"
+msgstr "Status beim Start Aktualisieren"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:425
+msgid "Automatically Update Status"
+msgstr "Status automatisch aktualisieren"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:426
+msgid "Update Interval"
+msgstr "Aktualisierungs Intervall"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:428
+msgid "General"
+msgstr "Allgemein"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:435
+msgid "Show Pollable Faxes (Takes Effect after Restart)"
+msgstr "Abrufbare Faxe anzeigen (Wird nach einem Neustart wirksam)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:442
+msgid "Lanuage"
+msgstr "Sprache"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:443
+msgid "Default Text Completion"
+msgstr "Standard Text Vervollständigung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:444
+msgid "Confirm Sending Non-Postscript Documents"
+msgstr "Senden von Nicht-Postscript Dokumenten bestätigen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:445
+msgid "Confirm Delete"
+msgstr "Löschen bestätigen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:450
+msgid "Paths"
+msgstr "Pfade"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:451
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:423
+msgid "Fax Viewer"
+msgstr "Fax Anzeigeprogramm"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:452
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:425
+msgid "Document Viewer"
+msgstr "Dokumenten Anzeigeprogramm"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:453
+msgid "Use Custom Address Book (Takes Effect after Restart)"
+msgstr "Eigenes Adressbuch verwenden (Wird nach einem Neustart wirksam)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:454
+msgid "Use Internal Cover"
+msgstr "Internes Deckblatt benutzen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:455
+msgid "Use Custom PostScript File"
+msgstr "Eigene Postscript Datei benutzen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:456
+msgid "Save Cover in Document Queue After Sending"
+msgstr "Deckblatt nach dem Senden in der Dokumentenablage speichern"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:458
+msgid "Monitor"
+msgstr "Überwachen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:459
+msgid "Monitor File"
+msgstr "Datei Überwachen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:460
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:543
+msgid "File"
+msgstr "Datei"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsDialog.java:461
+msgid "Monitor Interval"
+msgstr "Überwachungsintervall"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DetailsDialog.java:89
+msgid "JHylaFAX Job Details"
+msgstr "JHylaFAX Job Details"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DetailsDialog.java:92
+msgid "Property"
+msgstr "Eigenschaft"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/DetailsDialog.java:93
+msgid "Value"
+msgstr "Wert"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:172
+msgid "Could not load settings"
+msgstr "Die Einstellungen konnten nicht geladen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:344
+msgid "Could not store addressbook"
+msgstr "Das Adressbuch konnte nicht gespeichert werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:358
+msgid "Could not store settings"
+msgstr "Die Einstellungen konnen nicht gespeichert werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:426
+#, java-format
+msgid "Connecting to {0}"
+msgstr "Stelle Verbindung zu {0} her"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:496
+#, java-format
+msgid "Enter admin password for {0}:"
+msgstr "Admin Passwort für {0} eingeben:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:497
+#, java-format
+msgid "Enter password for {0}:"
+msgstr "Passwort für {0} eingeben:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:498
+msgid "JHylaFAX Connection"
+msgstr "JHylaFAX Verbindung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:507
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:511
+msgid "Abort by user."
+msgstr "Abbruch durch den Benutzer."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:544
+msgid "Help"
+msgstr "Hilfe"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:550
+msgid "Received"
+msgstr "Empfangen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:551
+msgid "Sending"
+msgstr "Sende"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:552
+msgid "Pollable"
+msgstr "Abrufbar"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:553
+msgid "Done"
+msgstr "Gesendet"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:554
+msgid "Documents"
+msgstr "Dokumente"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:557
+msgid "Send Fax..."
+msgstr "Fax senden..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:558
+msgid "Opens a dialog for sending a fax"
+msgstr "Öffnet einen Dialog zum senden von Faxen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:560
+msgid "Poll Fax..."
+msgstr "Fax abrufen..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:561
+msgid "Opens a dialog for polling a fax"
+msgstr "Öffnet einen Dialog zum Abrufen von Faxen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:565
+msgid "Update Status"
+msgstr "Status aktualisieren"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:566
+msgid "Queries the status from the server"
+msgstr "Fragt den Status vom Server ab"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:568
+msgid "Settings..."
+msgstr "Einstellungen..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:569
+msgid "Displays the settings dialog"
+msgstr "Zeigt den Einstellungen-Dialog an"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:572
+msgid "Setup Wizard..."
+msgstr "Einstellungs-Assistent..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:573
+msgid "Displays the settings wizard"
+msgstr "Zeigt den Einstellungs-Assistenten an"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:576
+msgid "Exit"
+msgstr "Beenden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:577
+msgid "Closes the application"
+msgstr "Beendet die Anwendung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:579
+msgid "About..."
+msgstr "Über..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:580
+msgid "Opens a dialog that displays funny information"
+msgstr "Öffnet einen Dialog, der witzige Informationen anzeigt"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:776
+#, java-format
+msgid "About JHylaFax {0}"
+msgstr "Über JHylaFAX {0}"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:778
+msgid "General Information"
+msgstr "Allgemeine Informationen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:779
+msgid "License"
+msgstr "Lizens"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:782
+msgid "3rd Party Software"
+msgstr "Andere Software"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JHylaFAX.java:952
+msgid "Could not load addressbook"
+msgstr "Das Adressbuch konnte nicht geladen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:133
+msgid "Please enter a number"
+msgstr "Bitte eine Nummer eingeben"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:157
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:179
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:255
+msgid "Number"
+msgstr "Nummer"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:160
+msgid "Date"
+msgstr "Datum"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:161
+msgid "Now"
+msgstr "Sofort"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:162
+msgid "Later"
+msgstr "Später"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:220
+msgid "Parameter..."
+msgstr "Parameter"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/AbstractFaxDialog.java:221
+msgid "Opens a dialog for entering job parameter"
+msgstr "Öffnet einen Dialog zum Eingeben von Job Parametern"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:171
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:246
+msgid "ID"
+msgstr "ID"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:172
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:263
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:123
+msgid "Priority"
+msgstr "Priorität"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:173
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:265
+msgid "Result"
+msgstr "Ergebnis"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:174
+msgid "Permission"
+msgstr "Rechte"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:177
+msgid "Client Machine"
+msgstr "Client Maschine"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:182
+msgid "Dials"
+msgstr "Wählversuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:183
+msgid "Last Error"
+msgstr "Letzter Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:184
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:269
+msgid "State"
+msgstr "Status"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:185
+msgid "CID"
+msgstr "CID"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:186
+msgid "Tag"
+msgstr "Kennzeichen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:209
+msgid "Edit..."
+msgstr "Bearbeiten..."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:224
+msgid "Assigned modem"
+msgstr "Zugeordnetes Modem"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:225
+msgid "Client-specefied dial string"
+msgstr "Client-spezifizierter Wählstring"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:226
+msgid "Client machine name"
+msgstr "Client Maschinenname"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:227
+msgid "Scheduling priority"
+msgstr "Zeitplanungspriorität"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:228
+msgid "Communication identifier"
+msgstr "Kommunikationsidentifikator"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:229
+msgid "Page chopping threshold"
+msgstr "Seitenzerhackerschwellwert"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:230
+msgid "Client-specified minimum signalling rate"
+msgstr "Client-spezifizierte minimale Übertragungsrate"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:231
+msgid "Client-specified tag"
+msgstr "Client-spezifiziertes Kennzeichen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:232
+msgid "Client-specified tagline format"
+msgstr "Client-spezifiziertes Kennzeichenformat"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:233
+msgid "# of consecutive failed dials"
+msgstr "Anzahl der aufeinanderfolgenden fehlgeschlagenen Wählversuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:234
+msgid "# of consecutive failed tries"
+msgstr "Anzahl der aufeinanderfolgenden fehlgeschlagenen Versuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:235
+msgid "Desired data format"
+msgstr "Gewünschtes Datenformat"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:236
+msgid "Desired use of ECM"
+msgstr "Gewünschte Benutzung von ECM"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:237
+msgid "Desired minimum scanline time"
+msgstr "Gewünschte minimale Zeit pro Scanzeile"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:238
+msgid "Desired signalling rate"
+msgstr "Gewünschte Übertragungsrate"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:239
+msgid "Destination company name"
+msgstr "Ziel-Firmenname"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:240
+msgid "Destination geographic location"
+msgstr "Ziel- Ort"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:241
+msgid "Destination password"
+msgstr "Ziel-Passwort"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:242
+msgid "Destination sub-address"
+msgstr "Ziel-Subadresse"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:243
+msgid "# of attempted dials"
+msgstr "Anzahl der Wählversuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:244
+msgid "Group identifier"
+msgstr "Gruppenkennzeichen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:245
+msgid "Horizontal resolution"
+msgstr "Horizontale Auflösung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:247
+msgid "Job done operation"
+msgstr "Jobbeendigungsoperation"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:248
+msgid "Job type"
+msgstr "Jobtyp"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:249
+msgid "Kill time"
+msgstr "Ablaufzeit"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:250
+msgid "Last error"
+msgstr "Letzter Fehler"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:251
+msgid "Total # of dials"
+msgstr "Gesamtanzahl der Wählversuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:252
+msgid "Total # of tries"
+msgstr "Gesamtanzahl der Versuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:253
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:121
+msgid "Notify"
+msgstr "Benachrichtigung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:254
+msgid "Notify address"
+msgstr "Benachrichtigungsadresse"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:257
+msgid "Page chopping"
+msgstr "Seitenzerhacker"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:259
+msgid "Total # of pages"
+msgstr "Gesamtanzahl der Seiten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:260
+msgid "Page length"
+msgstr "Seitenlänge"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:261
+msgid "# of transmitted pages"
+msgstr "Anzahl der übertragenen Seiten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:262
+msgid "Page width"
+msgstr "Seitenbreite"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:264
+msgid "Receiver"
+msgstr "Empfänger"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:266
+msgid "Retry time"
+msgstr "Zeit bis zum nächsten Versuch"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:268
+msgid "Send time"
+msgstr "Sendezeit"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:270
+msgid "Vertical resolution"
+msgstr "Vertikale Auflösung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:277
+msgid "Details"
+msgstr "Details"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:383
+#, java-format
+msgid "Do you really want to delete the job with id {0}?"
+msgstr "Soll der Job mit der Nummer {0} wirklich gelöscht werden?"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:384
+msgid "Remove Job"
+msgstr "Job Entfernen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:392
+msgid "Remove"
+msgstr "Entfernen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:409
+msgid "Resume"
+msgstr "Fortsetzen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:427
+msgid "Send Now"
+msgstr "Jetzt Senden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:444
+msgid "Suspend"
+msgstr "Anhalten"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:468
+msgid "The job does not contain documents"
+msgstr "Der Job enthält keine Dokumente"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobQueuePanel.java:469
+msgid "JHylaFAX Information"
+msgstr "JHylaFAX Information"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:25
+msgid "Blocked (by concurrent activity to the same destination)"
+msgstr "Blockiert (wegen gleichzeitiger Aktivität zum selben Empfänger)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:29
+msgid "Waiting (for resources such as a free modem)"
+msgstr "Warte (auf Resourcen wie z.B. ein Modem)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:33
+msgid "Done (successfully)"
+msgstr "Erfolgreich abgeschlossen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:37
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:41
+msgid "Pending (waiting for its time to send to arrive)"
+msgstr "Anhängig (wartet auf die zu sendende Zeit)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:45
+msgid "Running"
+msgstr "Aktiv"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:49
+msgid ""
+"Sleeping (waiting for a scheduled timeout such as a delay between attempts "
+"to send)"
+msgstr "Schlafend (wartet auf den nächsten Wählversuch)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/StateCellRenderer.java:53
+msgid "Suspended (not being  scheduled)"
+msgstr "Pausiert (wird nicht geplant)"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:94
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:135
+msgid "JHylaFAX Setup Wizard"
+msgstr "JHylaFAX Einstellungs-Assistent"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:123
+msgid "Easily setup JHylaFAX in 3 steps."
+msgstr "JHylaFAX in 3 einfachen Schritten aufsetzen."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:140
+msgid ""
+"JHylaFAX is a Java client for the HylaFAX fax server. It is licensed under "
+"the <b>General Public License (GPL)</b>, see about for details.<p><p>Setup "
+"requires three simple steps:<ol><li>Server connection and "
+"authentication<li>Sender and notifcation<li>External viewer programs</"
+"ol><p>Thank you for using JHylaFAX. "
+msgstr ""
+"JHylaFAX ist ein Java Client für den HylaFAX Faxserver. Es ist unter der "
+"<b>General Public License (GPL)</b> lizensiert. Siehe den Über-Dialog für "
+"mehr Details.<p><p>Das Aufsetzen erfordert drei einfache Schritte:"
+"<ol><li>Verbindung zum Server und Authentifizierung<li>Absender und "
+"Benachrichtigungen<li>Externe Anzeigeprogramme</ol><p>Vielen Dank für die "
+"Benutzung von JHylaFAX. "
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:206
+msgid "The connection to the fax server is configured here."
+msgstr "Die Verbindung zum Faxserver wird hier konfiguriert."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:218
+msgid "HylaFAX Server Connection"
+msgstr "HylaFAX Server Verbindung"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:228
+msgid "Enter the host and port of your HylaFAX server:"
+msgstr "Geben Sie die Adresse und den Port des HylaFAX servers an:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:232
+msgid "Enter a username that is used to login to the server:"
+msgstr "Geben Sie den Benutzernamen an, der zum Server übermittelt wird:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:269
+msgid "Enter a name that is used to identify the sender:"
+msgstr "Geben Sie den Namen des Absenders an:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:271
+msgid ""
+"Enter an email address to receive notification when a fax has been sent or "
+"cancelled:"
+msgstr ""
+"Geben Sie eine Emailadresse zum Empfang von Benachrichtigungen für "
+"erfolgreich versandte oder fehlgeschlagene Faxe an:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:272
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:119
+msgid "Email"
+msgstr "Email"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:282
+msgid ""
+"The sender's name and an email address for notifications are configured here."
+msgstr ""
+"Der Name des Absenders und eine Emailadresse für Benachrichtigungen wird "
+"hier konfiguriert."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:294
+msgid "Sender and Notification"
+msgstr "Absender und Benachrichtigungen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:418
+msgid ""
+"JHylaFAX depends on external programs to display received and sent faxes. "
+"You can either enter the path of a program or use Search to let JHylaFAX "
+"suggest a program.You may use $f as a placeholder for the filename that is "
+"passed as a parameter."
+msgstr ""
+"JHylaFAX benötigt externe Programme um empfangene und gesendete Faxe "
+"anzuzueigen. Sie können entweder den Programmpfad angeben oder die "
+"Suchfunktion nutzen, um einen Vorschlag zu erhalten. Sie können $f als "
+"Platzhalter für den Dateinamen, der als Parameter übergeben wird, verwenden."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:422
+msgid "Enter the path of a programm that can handle TIFF G3 files:"
+msgstr ""
+"Geben Sie den Pfad zu einem Programm an, dass TIFF G3 Dateien verarbeiten "
+"kann:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:424
+msgid "Enter the path of a programm that can handle PostScript files:"
+msgstr ""
+"Geben Sie den Pfad zu einem Programm an, dass PostScript Dateien verarbeiten "
+"kann:"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:426
+msgid "Search"
+msgstr "Suche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:438
+msgid "Viewer programs are configured here."
+msgstr "Anzeigeprogramme werden hier konfiguriert."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/SettingsWizard.java:450
+msgid "External Programs"
+msgstr "Externe Programme"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:82
+msgid "Parameter"
+msgstr "Parameter"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:124
+msgid "Maximum Tries"
+msgstr "Maximale Versuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:125
+msgid "Maximum Dials"
+msgstr "Maximale Wählversuche"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:126
+msgid "Paper Format"
+msgstr "Papierformat"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:174
+msgid "Unknown notification type. Using default."
+msgstr "Unbekannter Benachrichtigungstyp. Standard wird benutzt."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:181
+msgid "Invalid resolution. Using default."
+msgstr "Ungültige Auflösung. Standard wird benutzt."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobPanel.java:190
+msgid "Unknown paper type. Using default."
+msgstr "Unbekanntes Papierformat. Standard wird bentutzt."
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:39
+msgid "Retrying job"
+msgstr "Sende Job"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:60
+msgid "Could not retry job"
+msgstr "Der Job konnte nicht gesendet werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:73
+msgid "Resuming job"
+msgstr "Setzte Job fort"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:90
+msgid "Could not resume job"
+msgstr "Der Job konnte nicht fortgesetzt werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:103
+msgid "Getting document filenames"
+msgstr "Empfange Dokumentnamen"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:135
+msgid "Could not get filenames"
+msgstr "Die Dokumentnamen konnten nicht empfangen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:145
+msgid "Deleting file"
+msgstr "Lösche Datei"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:163
+msgid "Could not delete file"
+msgstr "Die Datei konnte nicht gelöscht werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:178
+msgid "Setting mode"
+msgstr "Setzte Mode"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:183
+msgid "Downloading file"
+msgstr "Lade Datei herunter"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:209
+msgid "Could not download file"
+msgstr "Die Datei konnte nicht heruntergeladen werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:224
+msgid "Removing job"
+msgstr "Entferne Job"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:241
+msgid "Could not remove job"
+msgstr "Der Job konnte nicht entfernt werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:254
+msgid "Suspending job"
+msgstr "Halte Job an"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:271
+msgid "Could not suspend job"
+msgstr "Der Job konnte nicht angehalten werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:298
+msgid "Could not get status"
+msgstr "Der Status konnte nicht abgefragt werden"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:323
+msgid "Getting Status"
+msgstr "Hole Status"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/JobHelper.java:352
+#, java-format
+msgid "Getting {0}"
+msgstr "Hole {0}"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/fax/Paper.java:26
+msgid "DIN A4"
+msgstr "DIN A4"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/fax/Paper.java:27
+msgid "DIN A3"
+msgstr "DIN A3"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/fax/Paper.java:28
+msgid "Letter"
+msgstr "Letter"
+
+#: /home/stp/.workspace/jhylafax/src/java/net/sf/jhylafax/fax/Paper.java:29
+msgid "Legal"
+msgstr "US Legal"
+
+#~ msgid "Local Addressbook"
+#~ msgstr "Lokales Adressbuch"
+
+#~ msgid "JHylaFAX Addressbook"
+#~ msgstr "JHylaFAX Adressbuch"
+
+#~ msgid "Addressbook"
+#~ msgstr "Adressbuch"
+
+#~ msgid "Could not load language support"
+#~ msgstr "Die Sprachunterstützung konnte nicht geladen werden"
+
+#~ msgid "Connecting..."
+#~ msgstr "Verbinde..."
+
+#~ msgid "Authentification"
+#~ msgstr "Anmeldung"
+
+#~ msgid "After Sending"
+#~ msgstr "Nach dem Senden"
+
+#~ msgid "Save Cover in Document Queue"
+#~ msgstr "Deckblatt in der Dokumentenablage Speichern"
+
+#~ msgid ","
+#~ msgstr ","

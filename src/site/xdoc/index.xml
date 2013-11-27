@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>JHylaFAX</title>
+    <author>Steffen Pingel</author>
+  </properties>
+  <body>
+    <section name="JHylaFAX">
+      <p>A Java client licensed under the GPL for the <a
+		  href="http://www.hylafax.org" target="_blank">HylaFAX</a>
+		  fax server. JHylaFAX is purely written in Java and runs on
+		  any Java 6.0 enabled platform. It has a small footprint,
+		  starts up fast and features a sleek user interface.</p>
+
+	  <p><a href="screenshots.html"><img align="right"
+	  src="images/main-window-1.3.1-small.png"
+	  border="0"></img></a></p>
+
+	  <p><b>Features</b></p>
+	  
+	  <ul>
+		<li>Faxing of documents in PostScript format</li>
+		<li>Polling of faxes</li>
+		<li>Automatic generation and preview of cover page</li>
+		<li>Editing of fax job parameters</li>
+		<li>Viewing and deleting of received faxes and stored
+		documents</li>
+		<li>Support for HylaFAX admin mode</li>
+		<li>Monitoring of files with automatic popup of send dialog</li>
+		<li>Address book that supports vCard import and export as well
+		as importing SuSEFax address books</li>
+		<li>Language support: English, German, Spanish, Italian,
+		Portuguese, French, Turkish, Polish, Catalan, Czech and Dutch</li>
+	  </ul>
+
+	  <p><b>Requirements</b></p>
+      <ul>
+		<li><a href="http://java.sun.com/javase/6/"
+		target="_blank">Java 6.0</a> (JRE)</li>
+	  </ul>
+
+	  <p><b>Optional</b></p>
+	  <ul>
+		<li>An image program to view TIFF G3 files (like kfax) for
+		received faxes</li>
+		<li>A program to view PostScript files (like ghostview) for
+		preview and stored documents</li>
+		<li>A running HylaFAX server (otherwise JHylaFAX is pretty useless)</li>
+	  </ul>
+
+	  <p>JHylaFAX can be integrated with the native printing
+	  system of Windows or Unix (CUPS). See <a href="manual.html">the
+	  manual</a> for details.</p>
+
+	  <subsection name="About the Project">
+		<p>The first release of JHylaFAX was developed in 1999 based
+		  on <a
+		  href="http://www.novell.com/products/linuxpackages/professional/susefax.html">SuSEFax</a>
+		  by Carsten Hoeger. The goal was to provide a more intuitive
+		  user interface based on the - at that time - brand new Swing
+		  library. Unfotunatelly the development was stopped before
+		  the code reached a stable state. The 0.3.5 release of
+		  JHylaFAX looks nice, but the code is unreadable, badly
+		  synchronized, features quite a few race conditions and ugly
+		  handling of modal dialogs can lead to dead locks every once
+		  in a while.</p>
+
+		<p>The current release is a complete rewrite that serves as a
+		  testbed for the XNap Commons library and learning experience
+		  for the cool new Java 5.0 language enhancements. It makes
+		  use of the gnu.hylafax library for the server communication
+		  and uses JGoodies Forms for the GUI layout. The only part
+		  that is still based on SuSEFax code handles the cover page
+		  generation. <a href="dependencies.html">This page</a>
+		  contains a complete list of the dependencies.</p>
+	  </subsection>
+    </section>
+  </body>
+</document>

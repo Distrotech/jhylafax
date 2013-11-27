@@ -1,0 +1,108 @@
+? build
+? dist
+? upload.sh
+? docs/api
+Index: build.sh
+===================================================================
+RCS file: /cvsroot/gnu-hylafax/gnu-hylafax/build.sh,v
+retrieving revision 1.1
+diff -u -b -B -d -w -U5 -r1.1 build.sh
+--- build.sh	20 Feb 2006 04:24:55 -0000	1.1
++++ build.sh	3 Jul 2006 18:57:21 -0000
+@@ -5,12 +5,13 @@
+ 
+ TARGET_CLASSPATH=`echo ../../lib/*.jar | tr ' ' ':'`
+ 
+ TARGET_CLASSPATH=${TARGET_CLASSPATH}:${JAVA_HOME}/lib/tools.jar
+ 
+-ANT_HOME=.
+-ANT=$ANT_HOME/bin/ant
++#ANT_HOME=.
++#ANT=$ANT_HOME/bin/ant
++ANT=ant
+ #xerces/xalan for test support.
+ JAXP_DOM_FACTORY="org.apache.xerces.jaxp.DocumentBuilderFactoryImpl"
+ JAXP_SAX_FACTORY="org.apache.xerces.jaxp.SAXParserFactoryImpl"
+ 
+ ANT_OPTS="$ANT_OPTS -Djavax.xml.parsers.DocumentBuilderFactory=$JAXP_DOM_FACTORY"
+Index: build.xml
+===================================================================
+RCS file: /cvsroot/gnu-hylafax/gnu-hylafax/build.xml,v
+retrieving revision 1.2
+diff -u -b -B -d -w -U5 -r1.2 build.xml
+--- build.xml	20 Feb 2006 04:36:46 -0000	1.2
++++ build.xml	3 Jul 2006 18:57:21 -0000
+@@ -1,10 +1,10 @@
+ <project name="gnu.hylafax" basedir="." default="all">
+ 
+   <description>GNU Hylafax dist File</description>
+   
+-  <property name="gnu.hylafax.version" value="0.0.9.2"/>
++  <property name="gnu.hylafax.version" value="0.0.9.2-1"/>
+   <property name="src" location="src/gnu"/>
+   <property name="dist"  location="dist"/>
+   <property name="build"  location="build"/>
+   <property name="classes" location="classes"/>
+   <property name="javadoc" location="docs/api"/>
+Index: src/gnu/inet/ftp/FtpClientProtocol.java
+===================================================================
+RCS file: /cvsroot/gnu-hylafax/gnu-hylafax/src/gnu/inet/ftp/FtpClientProtocol.java,v
+retrieving revision 1.5
+diff -u -b -B -d -w -U5 -r1.5 FtpClientProtocol.java
+--- src/gnu/inet/ftp/FtpClientProtocol.java	20 Feb 2006 04:52:11 -0000	1.5
++++ src/gnu/inet/ftp/FtpClientProtocol.java	3 Jul 2006 18:57:22 -0000
+@@ -1349,32 +1349,47 @@
+ 
+       boolean done= false;
+       boolean first= true;
+       while(!done){
+          String tmp= input.readLine();
++         if (tmp == null) {
++             throw new IOException("Unexpected end of response: '" + response + "'");
++         }
+          response+= tmp+'\n';
+ 
+-         if(tmp.length() >= 4){
+-            if(first == true){
++         log.debug("<- " + tmp);
++         
++         if(first) {
++            if(tmp.length() >= 3){
+                // first time through
+                rc= response.substring(0,3);
+                first= false;
++               if (tmp.length() == 3 || tmp.charAt(3) == ' ') {
++                  // single line response
++                  return response;
+             }
++               
++               // expect multiline response
++               if (tmp.charAt(3) != '-') {
++                  throw new IOException("Invalid response: '" + response + "'");
++               }
++            } else {
++                throw new IOException("Invalid response: '" + response + "'");
++            }
++         }
++
++         if(tmp.length() >= 4){         
+             // from rfc0959, a multiline response has '-' characters
+             //  in the third position for all response lines other than
+             //  the last which has a ' ' character after the response
+             //  code number.
+             if((rc.equals(tmp.substring(0,3))) &&
+                (tmp.charAt(3) == ' '))
+             {
+                done= true;
+             }
+-         }else{
+-            // length is < 4
+-            //  not sure if this is a valid condition
+-            // I assume this is ok and continue...
+-         }// if(length >= 4)
++         }
+       }// while loop
+ 
+       return response; 
+    }// readResponse
+    

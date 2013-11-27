@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/DECORATION/1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+	<poweredBy>
+		<logo
+			name="Get JHylaFAX - Java HylaFAX client at SourceForge.net. Fast, secure and Free Open Source software downloads"
+			href="http://sourceforge.net/projects/jhylafax"
+			img="http://sflogo.sourceforge.net/sflogo.php?group_id=136485&amp;type=12" />
+	</poweredBy>
+	<body>
+		<links>
+			<item name="SourceForge Project" href="http://sourceforge.net/projects/jhylafax/" />
+			<!--
+				<item name="SourceForge Stats"
+				href="http://sourceforge.net/project/stats/?group_id=136485&amp;ugn=jhylafax"/>
+			-->
+			<item name="LaunchPad Project" href="https://launchpad.net/products/jhylafax/" />
+			<item name="Freshmeat Project" href="http://freshmeat.net/projects/jhylafax/" />
+		</links>
+		<menu name="JHylaFAX">
+			<item href="/index.html" name="Home" />
+			<item href="/screenshots.html" name="Screenshots" />
+			<item name="Download" href="/download.html" />
+			<item href="/manual.html" name="Manual" />
+			<item href="/howtohelp.html" name="How to Help" />
+			<item href="/development.html" name="Development" />
+		</menu>
+		<menu ref="reports" />
+	</body>
+</project>

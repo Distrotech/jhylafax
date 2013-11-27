@@ -1,0 +1,249 @@
+diff -urw gnu.hylafax-0.0.8-org/src/Makefile gnu.hylafax-0.0.8/src/Makefile
+--- gnu.hylafax-0.0.8-org/src/Makefile	2004-10-07 16:53:07.000000000 +0200
++++ gnu.hylafax-0.0.8/src/Makefile	2005-11-14 02:11:11.000000000 +0100
+@@ -5,7 +5,7 @@
+ #
+ 
+ # package version
+-VERSION=0.0.8
++VERSION=0.0.8.3
+ 
+ # installation stuff
+ PREFIX=/usr
+@@ -13,9 +13,9 @@
+ #
+ # Change these for your environment
+ #
+-JAVAC=javac
++JAVAC=javac -target 1.3 -source 1.3
+ JAR=jar
+-JAVADOC=javadoc
++JAVADOC=javadoc -source 1.3
+ 
+ FIND=/usr/bin/find
+ MV=/bin/mv
+@@ -31,7 +31,7 @@
+ 
+ all: jar docs
+ 
+-classes: gnu/hylafax/HylaFAXClient.class job util
++classes: gnu/hylafax/HylaFAXClient.class job 
+ 
+ job: gnu/hylafax/job/ThreadSafeJob.class gnu/hylafax/job/SendNotifier.class \
+ 	gnu/hylafax/job/ReceiveNotifier.class
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/hylafax/HylaFAXClient.java gnu.hylafax-0.0.8/src/gnu/hylafax/HylaFAXClient.java
+--- gnu.hylafax-0.0.8-org/src/gnu/hylafax/HylaFAXClient.java	2003-12-19 05:18:58.000000000 +0100
++++ gnu.hylafax-0.0.8/src/gnu/hylafax/HylaFAXClient.java	2005-10-10 14:05:47.000000000 +0200
+@@ -476,7 +476,6 @@
+          FileNotFoundException,
+          ServerResponseException
+    {
+-      String filename;
+ 
+       Getter get;
+       if(passive == true){
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/hylafax/HylaFAXClientProtocol.java gnu.hylafax-0.0.8/src/gnu/hylafax/HylaFAXClientProtocol.java
+--- gnu.hylafax-0.0.8-org/src/gnu/hylafax/HylaFAXClientProtocol.java	2003-12-29 20:44:10.000000000 +0100
++++ gnu.hylafax-0.0.8/src/gnu/hylafax/HylaFAXClientProtocol.java	2005-11-14 02:10:51.000000000 +0100
+@@ -90,7 +90,7 @@
+ 
+       // check response code
+       StringTokenizer st= new StringTokenizer(response);
+-      if(!st.nextToken().equals("250")){
++      if(!st.nextToken().equals("230")){
+          // command failed
+          throw (new ServerResponseException(response));
+       }// fi
+@@ -851,11 +851,19 @@
+       ostream.flush();
+       response= istream.readLine();
+       st= new StringTokenizer(response);
+-      if(!st.nextToken().equals("213")){
++      if (response.startsWith("213")) {
++    	  // FIXME check response.length()
++          String res = response.substring(4);
++          while (response.charAt(3) == '-') {
++              response= istream.readLine();
++              if (!response.startsWith("213"))
+          throw (new ServerResponseException(response));
++        	  // FIXME check response.length()
++              res += "\n" + response.substring(4);
+       }
+-
+-      return st.nextToken();
++          return res;
++      } else
++          throw (new ServerResponseException(response));
+    }// jparm
+ 
+ 
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/ActiveGetter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/ActiveGetter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/ActiveGetter.java	2002-09-23 21:35:07.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/ActiveGetter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -109,11 +109,13 @@
+       long amount= 0;
+       long buffer_size= 0;
+       byte buffer[]= new byte[BUFFER_SIZE];
+-      this.cancelled= false;	// reset cancelled flag
++      //this.cancelled= false;	// reset cancelled flag
+  
+       try{
+          // wait for connection
+          server.setSoTimeout(timeout);	// can only wait so long
++         if (cancelled)
++             throw new InterruptedIOException("Transfer cancelled"); //small race condition here
+          sock= server.accept();
+          signalConnectionOpened(
+             new ConnectionEvent(sock.getInetAddress(), sock.getPort())
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/ActivePutter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/ActivePutter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/ActivePutter.java	2002-09-23 21:35:08.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/ActivePutter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -109,11 +109,13 @@
+       long amount= 0;
+       int buffer_size= 0;
+       byte buffer[]= new byte[BUFFER_SIZE];
+-      this.cancelled= false;	// reset cancelled flag
++      //this.cancelled= false;	// reset cancelled flag
+  
+       try{
+          // wait for connection
+          server.setSoTimeout(timeout);	// can only wait so long
++         if (cancelled)
++             throw new InterruptedIOException("Transfer cancelled");
+          sock= server.accept();
+          signalConnectionOpened(
+             new ConnectionEvent(sock.getInetAddress(), sock.getPort())
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/Getter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/Getter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/Getter.java	2002-09-23 21:35:08.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/Getter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -119,6 +119,11 @@
+       }
+    };// cancel
+ 
++   public synchronized void start() {
++    this.cancelled = false; //Reset cancelled flag here and not in run!
++    super.start();
++   }
++   
+    /**
+     * add a ConnectionListener to the list of connectionListeners
+     * @param listener the ConnectionListener to add to the list
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/PassiveGetter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/PassiveGetter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/PassiveGetter.java	2002-09-23 21:35:08.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/PassiveGetter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -41,6 +41,7 @@
+ public class PassiveGetter extends Getter {
+    // private data
+    private PassiveConnection connection;
++    private Socket sock = null;
+ 
+    // public constructors
+    //
+@@ -83,25 +84,35 @@
+       if(!cancelled){
+          cancelled= true;
+          interrupt();
++            if (sock != null)
++                try {
++                    sock.close(); // Interrupt I/O
++                } catch (IOException e) {
++                    // do nothing
++                }
++                
+       }
+    };// cancel
+ 
++    
+    /**
+     * get data from server using given parameters.
+     */
+    public void run(){
+       boolean signalClosure= false;
+-      Socket sock= null;
++//      Socket sock= null;
+       InputStream istream;
+       long amount= 0;
+       int buffer_size= 0;
+       byte buffer[]= new byte[BUFFER_SIZE];
+-      this.cancelled= false;	// reset cancelled flag
++        //this.cancelled= false;	// reset cancelled flag
+       PassiveParameters parameters= connection.getPassiveParameters();
+  
+       try{
+          // make connection
+          sock= connection.getSocket();
++            if (cancelled)
++                throw new InterruptedIOException("Transfer cancelled");
+          signalConnectionOpened(
+             new ConnectionEvent(parameters.getInetAddress(), parameters.getPort())
+             );
+@@ -167,7 +178,7 @@
+             new ConnectionEvent(parameters.getInetAddress(), parameters.getPort())
+             );
+       }
+-         
++        sock = null;
+    };// run
+ 
+ };// PassiveGetter 
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/PassivePutter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/PassivePutter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/PassivePutter.java	2002-09-23 21:35:08.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/PassivePutter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -77,12 +77,14 @@
+       long amount= 0;
+       int buffer_size= 0;
+       byte buffer[]= new byte[BUFFER_SIZE];
+-      this.cancelled= false;	// reset cancelled flag
++      //this.cancelled= false;	// reset cancelled flag
+       PassiveParameters parameters= connection.getPassiveParameters();
+  
+       try{
+          // make connection
+          sock= connection.getSocket();
++         if (cancelled)
++             throw new InterruptedIOException("Transfer cancelled");
+          signalConnectionOpened(
+             new ConnectionEvent(parameters.getInetAddress(), parameters.getPort())
+             );
+diff -urw gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/Putter.java gnu.hylafax-0.0.8/src/gnu/inet/ftp/Putter.java
+--- gnu.hylafax-0.0.8-org/src/gnu/inet/ftp/Putter.java	2002-09-23 21:35:08.000000000 +0200
++++ gnu.hylafax-0.0.8/src/gnu/inet/ftp/Putter.java	2005-10-10 14:05:47.000000000 +0200
+@@ -69,6 +69,11 @@
+    // public methods
+    //
+ 
++    public synchronized void start() {
++        this.cancelled = false; // Reset cancelled flag
++        super.start();
++    }
++    
+    /**
+     * set the InputStream to use for data input
+     * @param istream the InputStream to read data from
+@@ -179,7 +184,7 @@
+     * @param event the event to distribute to each ConnectionListener
+     **/
+    protected void signalConnectionOpened(ConnectionEvent event){
+-      Enumeration listeners= transferListeners.elements();
++      Enumeration listeners= connectionListeners.elements();
+       while(listeners.hasMoreElements()){
+          ConnectionListener listener=
+             (ConnectionListener)listeners.nextElement();
+@@ -192,7 +197,7 @@
+     * @param event the event to distribute to each ConnectionListener
+     **/
+    protected void signalConnectionClosed(ConnectionEvent event){
+-      Enumeration listeners= transferListeners.elements();
++      Enumeration listeners= connectionListeners.elements();
+       while(listeners.hasMoreElements()){
+          ConnectionListener listener=
+             (ConnectionListener)listeners.nextElement();
+@@ -205,7 +210,7 @@
+     * @param exception the exception that was thrown
+     **/
+    protected void signalConnectionFailed(Exception exception){
+-      Enumeration listeners= transferListeners.elements();
++      Enumeration listeners= connectionListeners.elements();
+       while(listeners.hasMoreElements()){
+          ConnectionListener listener=
+             (ConnectionListener)listeners.nextElement();

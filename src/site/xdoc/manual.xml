@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>Manual</title>
+    <author>Steffen Pingel</author>
+  </properties>
+  <body>
+    <section name="JHylaFAX Manual">
+	  <subsection name="Index">
+		<ol>
+		  <li><a href="#Startup">Startup</a></li>
+		  <li><a href="#Command_Line">Command Line</a></li>
+		  <li><a href="#External_Viewer">External Viewer</a></li>
+		  <li><a href="#Native_Printing_Systems">Native Printing Systems</a></li>
+		  <li><a
+		  href="#Customizing_the_Cover_Sheet">Customizing the Cover Sheet</a></li>
+		</ol>
+	  </subsection>
+
+	  <subsection name="Startup">
+		<p>Depending on your platform it simply clicking on the jar
+		file will start JHylaFAX. Otherwise use the following
+		command (replace x.y with the respective version):</p>
+
+		<source>java -jar jhylafax-x.y-app.jar</source>
+	  </subsection>
+
+	  <subsection name="Command Line">
+		<p>JHylaFAX support a few command line options:</p>
+
+		<source>java -jar jhylafax-x.y-app.jar [options] [files]</source>
+
+		<ul>
+		  <li>-n number</li>
+		  <p>Display the send dialog after startup. Number is entered as
+		  the destination in the dialog.</p>
+
+		  <li>-d</li>
+		  <p>Output debug information to stderr.</p>
+
+		  <li>-dd</li>
+		  <p>Output more debug information to stderr.</p>
+
+		  <li>--stdin</li>
+		  <p>Read PostScript from stdin and display send dialog after
+		  startup.</p>
+
+		  <li>files</li>
+		  <p>Display the send dialog after startup. Enters files as
+		  documents in the dialog.</p>
+		</ul>
+	  </subsection>
+
+	  <subsection name="External Viewer">
+		<p>JHylaFAX requires an external viewer program in order to
+		display received and sent faxes.</p>
+
+		<p>Received faxes are stored as TIFF G3.</p>
+
+		<p>Sent faxes are stored as PostScript.</p>
+
+		<p>See below for programs that can be used as viewers.</p>
+	  </subsection>
+
+	  <subsection name="Fax Viewer">
+
+		<p><b>Windows 95/98/ME</b></p>
+
+		<p>Look for a tool called kodakimg.exe that is shipped with
+		your operating system and usually installed in the Windows
+		directory.</p> 
+
+		<p><b>Windows 2000</b></p>
+
+		<p>Look for kodakimg.exe which is usually installed at
+		<tt>Program Files\Windows NT\Accessories\ImageVue</tt>.</p>
+
+		<p><b>Windows XP</b></p>
+
+		<p>You can use the image preview tool: 
+		<tt>rundll32.exe shimgvw.dll,ImageView_Fullscreen</tt>.</p>
+
+		<p><b>MacOSX</b></p>
+
+		<p>
+		<tt>open -a Preview.app $f</tt></p>
+
+		<p><b>Linux</b></p>
+
+		<p>kfax works pretty good.</p>
+	  </subsection>
+
+	  <subsection name="Document Viewer">
+
+		<p><b>Windows</b></p>
+
+		<p>Get <a href="http://www.cs.wisc.edu/~ghost/"
+		target="_blank">Ghostview</a>.</p>
+
+		<p><b>MacOSX</b></p>
+
+		<p>
+		<tt>open -a Preview.app $f</tt></p>
+
+		<p><b>Linux</b></p>
+	
+		<p>Use any ghostscript interpreter like gv or kghostview.</p>
+
+	  </subsection>
+
+	  <subsection name="Native Printing Systems">
+
+		<p><b>Windows</b></p>
+		
+		<p>This requires <a
+		href="http://www.cs.wisc.edu/~ghost/redmon/"
+		target="_blank">Redmon</a> for port redirection.</p>
+
+		<p><center><img src="images/redmon.png" border="0"></img></center></p>
+
+		<p><b>Linux</b></p>
+		
+		<p>This requires the CUPS printing system and <a
+		href="http://vigna.dsi.unimi.it/fax4CUPS/"
+		target="_blank">fax4CUPS</a>.</p>
+
+	  </subsection>
+
+	  <subsection name="Customizing the Cover Sheet">
+		<p>The cover page uses a template mechanism that replaces the
+		values entered in dialog to send a fax into a PostScript
+		document. An appropriate template file can be generated with
+		latex using the <a
+		href="http://userpages.uni-koblenz.de/~krienke/ftp/unix/hylafax/latex-cover/README">latex-cover</a>
+		style developed by R. Krienke.</p>
+
+		<p>The latex-cover distribution contains documentation and
+		example cover sheets that can easily be customized. Basically
+		extract latex-cover.1.0.8.tar.gz, look for a file named
+		<tt>lcover.tex</tt>, rename it to faxcover.tex, if you like,
+		and change it to suite your needs (if you would rather like to
+		use the JHylaFAX's cover page as a basis, download the
+		faxcover zip file from the JHylaFAX download page). To
+		generate a PostScript file, copy your template to the
+		directory containing the file <tt>latex-cover.sty</tt> and run
+		these commands:</p>
+
+		<source>latex faxcover.tex
+dvips faxcover.dvi</source>
+
+		<p>Launch JHylaFax and enter the path to the created
+		PostScript file named faxcover.ps (or whatever you like):</p>
+
+		<p><center><img border="0"
+		src="images/settings-paths-1.0.0.png"></img></center></p>
+
+		<p>Thats it! When you send a fax and check the <tt>Include
+		Cover</tt> option your custom template will be used.</p>
+
+		<p>Further information may be found in <a
+		href="http://www.hylafax.org/howto/tweaking.html"
+		target="_blank">Section 6.2 of the HylaFAX How-To Guide</a></p>
+
+	  </subsection>
+    </section>
+  </body>
+</document>

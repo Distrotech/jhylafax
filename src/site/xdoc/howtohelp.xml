@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <properties>
+    <title>How to Help</title>
+    <author>Steffen Pingel</author>
+  </properties>
+  <body>
+    <section name="How to Help">
+	  <subsection name="Getting Involved">
+		<p>Patches, bug reports and feature requests should be posted
+		to the <a
+		href="http://sourceforge.net/projects/jhylafax/">SourceForge
+		trackers</a>.</p>
+			  
+		<p><a href="mailto:steffenp@gmx.de">Feedback</a> is always
+		appreciated!</p>
+	  </subsection>
+
+	  <subsection name="Translating">
+		<p>If JHylaFAX is not yet available in your favorite language
+		or localization for a particular language is incorrect or
+		incomplete you can easily step in. The translations are hosted
+		at a <a href="https://launchpad.net/products/jhylafax/"
+		target="_blank">Launchpad project</a> that enables
+		localization through a web interface.</p>
+
+		<p>Here is <a href="https://launchpad.net/rosetta/+about"
+		target="_blank">a bit of background information</a> about the
+		facilities. To get started right away, <a
+		href="https://launchpad.net/products/jhylafax/+login"
+		target="_blank"> create an account </a> and goto the <a
+		href="https://launchpad.net/products/jhylafax/+translations"
+		target="_blank">JHylaFAX translation page</a>.</p>
+	  </subsection>
+   </section>
+  </body>
+</document>

@@ -67,6 +67,11 @@
 			<version>0.9.6</version>
 		</dependency>
 		<dependency>
+			<groupId>org.xnap.commons</groupId>
+			<artifactId>gettext-commons</artifactId>
+			<version>0.9.6</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -220,15 +225,13 @@
 	</reporting>
 	<repositories>
 		<repository>
-			<id>jhylafax</id>
-			<name>JHylaFAX Repository</name>
-			<url>http://jhylafax.sourceforge.net/repository</url>
-			<layout>legacy</layout>
+			<id>project.local</id>
+			<name>project</name>
+			<url>file:${project.basedir}/repo</url>
 		</repository>
 		<repository>
-			<id>xnap-commons</id>
-			<name>XNap Commons Repository</name>
-			<url>http://xnap-commons.sourceforge.net/repository</url>
+			<id>gettext-commons-repository</id>
+			<url>http://gettext-commons.googlecode.com/svn/maven-repository/</url>
 		</repository>
 	</repositories>
 </project>
